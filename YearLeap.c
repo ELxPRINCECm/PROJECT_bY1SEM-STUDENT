@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main() {
@@ -6,7 +5,8 @@ int main() {
 
     printf("-- HERE YOU CAN CHECK YOUR YEAR IS LEAP YEAR OR NOT --\n");
     printf("                 -CREATED BY PRINCE-\n");
-
+    
+while(1){
     printf("ENTER YOUR YEAR: ");
     scanf("%d", &year);
 
@@ -16,6 +16,7 @@ int main() {
     else {
         printf("%d YOUR YEAR IS NOT A LEAP YEAR :(\n", year);
     }
+}
 
-    return 0;
+    return 1;
 }

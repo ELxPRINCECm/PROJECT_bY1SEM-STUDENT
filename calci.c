@@ -1,21 +1,48 @@
-#include<stdio.h>
+
+
+#include <stdio.h>
+
 int main()
 {
     int a, b;
+    char x;
 
-      printf("----SIMPLE CALCULATOR----\n");
+    printf("--- CALCULATOR ---\n");
+    printf("           --CREATED BY PRINCE\n");
 
-      printf("ENTER FIRST NUMBER = ");
-      scanf("%d", &a);
-      printf("ENTER SECOND NUMBER = ");
-      scanf("%d", &b);
+    printf("ENTER YOU FIRST NUMBER: ");
+    scanf("%d", &a);
 
-      printf("addition = %d\n", a+b);
-      
-      printf("subtraction = %d\n", a-b);
-      
-      printf("multiplaction = %d\n",a*b);
-      
-      printf("division = %2f\n",(float)a/b);
-      return 0;
-}  
+    printf("ENTER YOUR OPERATOR (+, -, *, /): ");
+    scanf(" %c", &x);
+
+    printf("ENTER YOUR SECOUND NUMBER: ");
+    scanf("%d", &b);
+printf("ANSWER");
+    switch(x)
+    {
+        case '+':
+            printf("  = %d", a + b);
+            break;
+
+        case '-':
+            printf(" = %d", a - b);
+            break;
+            
+        case '*':
+            printf(" = %d", a * b);
+            break;
+
+        case '/':
+            if(b != 0)
+                printf(" = %d", a / b);
+            else
+                printf("Cannot divide by zero");
+            break;
+
+        default:
+            printf("Invalid operator");
+    }
+
+    return 0;
+}

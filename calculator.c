@@ -42,5 +42,6 @@ printf("ANSWER");
             printf("Invalid operator");
     }
 
+    
     return 0;
 }
